@@ -1,12 +1,13 @@
 import DashboardPage from "@/container/Dashboard";
 import LandingPage from "@/container/Landing";
 import AboutPage from "@/container/About";
+import { Navigate } from "react-router-dom";
 
 export const routes = [
   {
-    path: "/dashboard",
-    pathname: "dashboard",
-    name: "Dashboard Page",
+    path: "/",
+    pathname: "landing",
+    name: "Landing Page",
     index: false,
     children: [
       {
@@ -18,7 +19,7 @@ export const routes = [
   {
     path: "/home",
     pathname: "home",
-    name: "Landing Page",
+    name: "Home Page",
     index: false,
     children: [
       {

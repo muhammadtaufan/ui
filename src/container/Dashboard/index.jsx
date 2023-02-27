@@ -1,10 +1,9 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 
 const DashboardPage = () => {
   return (
-    <div>
-      <span>This is for dashbaord page</span>
-    </div>
+    <Navigate to='/home' />
   );
 };
 

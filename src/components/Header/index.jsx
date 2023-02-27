@@ -34,18 +34,28 @@ export default function WithSubnavigation() {
     const isHome = location.pathname === '/home'
 
     useEffect(() => {
-        if (isHome) {
-            let hero = document.getElementById("hero");
-            const sticky = hero.offsetTop;
-
+        if (!isHome) {
+            useHeader(true)
             window.addEventListener("scroll", () => {
-                if (window.scrollY > sticky) {
-                    useHeader(true)
-                } else if (window.scrollY < sticky) {
-                    useHeader(false)
-                }
+                useHeader(true)
             })
-        } else { useHeader(true) }
+        } else {
+
+            let hero = document.getElementById("hero");
+            if (hero) {
+
+                const sticky = hero.offsetHeight
+
+                window.addEventListener("scroll", () => {
+                    if (window.scrollY > sticky) {
+                        useHeader(true)
+                    } else {
+                        useHeader(false)
+                    }
+                })
+            }
+        }
+
     }, [isHome])
 
     return (
