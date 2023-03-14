@@ -27,9 +27,9 @@ function RouteWrapper() {
               </Route>
             </Routes>
           ))}
+        <Footer />
         </InsideContentWrapper>
       </ContentWrapper>
-      <Footer></Footer>
     </Box>
   );
 }
@@ -37,12 +37,8 @@ function RouteWrapper() {
 const ContentWrapper = styled("div")`
   position: relative;
   width: 100%;
-  // margin-top: 80px;
   min-height: 100vh;
-  height: 100%;
-  background-color: #ffffff;
-  max-height: 100%;
-  overflow: -webkit-paged-x;
+  // overflow: -webkit-paged-x;
   font-family: 'Poppins', sans-serif;
 `;
 

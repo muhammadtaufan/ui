@@ -15,7 +15,11 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
 
     return (
-        <Box bg={'#3B453F'} px={40} sx={{paddingY: '4em'}} position='relative'>
+        <Box
+            bg={'#3B453F'}
+            px={40} sx={{ paddingY: '4em' }}
+            position='relative'
+            >
             <Grid templateColumns='repeat(10, 1fr)' gap={2}>
                 <GridItem colSpan={6}>
                     <Link to='/home'>

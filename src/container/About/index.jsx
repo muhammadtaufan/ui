@@ -85,7 +85,7 @@ const AboutPage = () => {
           Big Journeys begin with Small Steps
         </Text>
       </Box>
-      <Box pb={20}>
+      <Box pb={20} bgColor='white'>
         <Text
           transition={'all .3s ease'}
           fontSize={17}

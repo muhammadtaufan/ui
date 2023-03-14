@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Image, IconButton, Button, useBreakpointValue, Flex, Stack, Grid, GridItem } from '@chakra-ui/react';
+import { Box, Text, Image, IconButton, Button, useBreakpointValue, Flex, Divider, Grid, GridItem } from '@chakra-ui/react';
 import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 import Slider from 'react-slick';
 import bgwhy from "@/assets/bg_green.png";
@@ -38,7 +38,7 @@ const LandingPage = () => {
 
   return (
     <>
-      <Box mb={20} pb={60}
+      <Box pb={60}
         position={'relative'}
         height={'100vh'}
         width={'full'}
@@ -133,8 +133,8 @@ const LandingPage = () => {
         {/* </Slider> */}
       </Box>
       <Box
-        bgImage={bgwhy}
-        pb={20}
+        bgImage={bgwhy} bgColor={'white'}
+        pb={20} pt={20}
         position={'relative'}
         width={'full'}
         backgroundPosition="bottom"
@@ -269,7 +269,7 @@ const LandingPage = () => {
           </GridItem>
         </Grid>
       </Box>
-      <Box align='center'>
+      <Box align='center' bgColor={'white'}>
         <Text
           transition={'all .3s ease'}
           sx={{ lineHeight: '1.2em' }}
