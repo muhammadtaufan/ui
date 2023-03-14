@@ -42,7 +42,7 @@ const LandingPage = () => {
         position={'relative'}
         height={'100vh'}
         width={'full'}
-        backgroundImage={`url('./src/assets/Landing Page Pict.png')`}
+        backgroundImage={`url('https://images2.imgbox.com/a7/c4/1ny4DNTx_o.png')`}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
@@ -133,7 +133,7 @@ const LandingPage = () => {
         {/* </Slider> */}
       </Box>
       <Box
-        bgImage={'https://ibb.co/Kw0zRDK'} bgColor={'white'}
+        bgImage={bgwhy} bgColor={'white'}
         pb={20} pt={20}
         position={'relative'}
         width={'full'}

@@ -70,7 +70,7 @@ const AboutPage = () => {
 
       <Box
         width={'full'}
-        bgImage={about3}
+        bgImage={`url('https://gcdnb.pbrd.co/images/zWHiNsW6HMjM.png')`}
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
       >
