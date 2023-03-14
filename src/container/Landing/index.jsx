@@ -133,7 +133,7 @@ const LandingPage = () => {
         {/* </Slider> */}
       </Box>
       <Box
-        bgImage={bgwhy} bgColor={'white'}
+        bgImage={'https://ibb.co/Kw0zRDK'} bgColor={'white'}
         pb={20} pt={20}
         position={'relative'}
         width={'full'}
